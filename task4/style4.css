@@ -42,6 +42,23 @@
     display: none;
 }
 
+#noItem {
+    display: none;
+}
+
+.no-item {
+    margin: 30px auto;
+}
+
+.no-item p {
+    font-size: larger;
+    color: #ff6f69;
+}
+
+#table-show {
+    display: none;
+}
+
 th {
     font-size: larger;
     text-align: center;
@@ -63,5 +80,9 @@ table {
 
 .wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
 }

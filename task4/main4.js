@@ -13,6 +13,7 @@ const singleInput = document.getElementById('singleInput');
 const multipleInput = document.getElementById('multipleInput');
 //??Event Listeners to Buttons
 singleBtn.addEventListener('click', () => {
+    table.style.display = 'none';
     singleBtn.classList.remove('btn-close-white')
     singleInput.style.display = 'block';
     multipleInput.style.display = 'none'
@@ -21,15 +22,18 @@ singleBtn.addEventListener('click', () => {
 })
 
 multipleBtn.addEventListener('click', () => {
+    table.style.display = 'none';
     multipleBtn.classList.remove('btn-close-white');
     singleInput.style.display = 'none';
     multipleInput.style.display = 'block';
     singleBtn.classList.add('btn-close-white')
     inputName = [];
+    
 })
 
+const table = document.getElementById('table-show')
 const tableBody = document.getElementById('table-body');
-
+const noItem = document.getElementById('noItem');
 //!!****Handling Inputs and Functions ******///
 singleInput.addEventListener('change', () => {
     inputName = [];
@@ -56,20 +60,19 @@ multipleInput.addEventListener('change', () => {
 // }
 
 const output = () => {
-    console.log('Result @ beginning=>', result)
+    // console.log('Result @ beginning=>', result)
     indexColl = [];
+    result = [];
     inputName.forEach(input => {
         indexNumber = coinName.findIndex((element) => {
             return element.toLowerCase() === input.toLowerCase();
         });
         indexColl.push(indexNumber);
     })
-
-    
     // console.log('Index Collection', indexColl, 'result=> ', result);
 
     indexColl.forEach(index => {
-        result.push( {
+        result.push({
             CryptoName: coinName[index],
             CryptoPrice: coinPrice[index]
         })
@@ -82,11 +85,18 @@ const displayRes = () => {
     console.log('Display Res=> ', result)
     for (i = 0; i < result.length; i++) {
         res = result[i];
-        let displayResult = `<tr>
+        if (res.CryptoName === undefined) {
+            table.style.display = 'none';
+            noItem.style.display = 'block';
+        } else {
+            noItem.style.display = 'none';
+            table.style.display = 'block';
+            let displayResult = `<tr>
                             <th>${res.CryptoName}</th>
                             <th>${res.CryptoPrice}</th>
                         </tr>`;
-        tableBody.innerHTML += displayResult
+            tableBody.innerHTML += displayResult
+        }
     }
 }
 
