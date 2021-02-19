@@ -49,10 +49,25 @@
             </div>
         </div>
     </nav>
-
-    <h4>
-        REGEX TEST
-    </h4>
+    <div class="header">
+        <h4>REGEX TEST</h4>
+    </div>
+    <div class="wrapper">
+        <div class="regex-input">
+            <input type="text" class="input form-control-plaintext" placeholder="Enter string to Regex Test" id="singleInput"
+                required>
+        </div>
+    </div>
+    <div class="result-display">
+        <div class="error" id="error-msg">
+            <h6>Sorry!</h6>
+            <p>The string is only valid if it contains at least underscore in between and ends with digit at end.</p>
+        </div>
+        <div class="success" id="success-msg">
+            <h6>Hooray!!!</h6>
+            <p>You Passed the String as Required</p>
+        </div>
+    </div>
 
     <script src="./main5.js"></script>
 </body>

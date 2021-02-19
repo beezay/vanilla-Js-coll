@@ -1,8 +1,20 @@
-let input = 'Hello_me23';
+let inputt = 'Hello_me23';
 
+const input = document.getElementById('singleInput');
+const errorMsg = document.getElementById('error-msg');
+const successMsg = document.getElementById('success-msg');
 
-let pattern = /^[a-zA-Z0-9]*?.*(_+)[a-zA-Z0-9]*\d$/gi;
+input.addEventListener('change', () => {
+    let pattern = /^[a-zA-Z0-9]*?.*(_+)[a-zA-Z0-9]*\d$/gi;
+    inputVal = input.value;
+    result = pattern.test(inputVal);
 
-result = pattern.test(input);
-
-console.log('Result =>', result);
+    if (result) {
+        successMsg.style.display = 'block';
+        errorMsg.style.display = 'none'
+    } else {
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'block'
+    }
+    console.log('Result =>', result);
+})
