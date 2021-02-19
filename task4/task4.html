@@ -53,6 +53,43 @@
     <h4>
         Search For Different Coin Rates
     </h4>
+    <h6>Please Input the CoinName!</h6>
+    <div class="wrapper">
+        <div class="input-wrapper">
+            <div class="button">
+                <button id="singleBtn" class="btn btn-primary">Single Input</button>
+                <button id="multipleBtn" class="btn btn-primary ">Multiple Input</button>
+            </div>
+            <div class="inputs">
+                <div class="single-input">
+                    <input type="text" class="input form-control-plaintext" placeholder="Enter currency Name" id="singleInput" required>
+                </div>
+                <div class="multiple-input">
+                    <input type="text" class="input form-control-plaintext" placeholder="String seprated by Comma" id="multipleInput" required>
+                </div>
+            </div>
+        </div>
+        <div class="output-wrapper">
+            <table class="table ml-5 table-bordered">
+                <thead>
+                    <tr>
+                        <th>CryptoName</th>
+                        <th>CryptoPrice</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- <tr>
+                        <td>BITCOIN</td>
+                        <td>$95</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="no-item" id="noItem">
+                <p>Search String Not Matched with Database</p>
+            </div>
+        </div>
+  
+    </div>
     <script src="./main4.js"></script>
 </body>
 
