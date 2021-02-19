@@ -1,0 +1,50 @@
+.input:focus {
+    background-color: rgba(140, 240, 152, 0.1);
+    transform: scalex(1.7);
+    transition: all 0.5s ease-in-out;
+    outline: none;
+}
+
+.input:hover {
+    background-color: rgba(140, 240, 152, 0.1);
+    transform: scalex(1.7);
+    transition: all 0.5s ease-in-out;
+}
+
+input {
+    border-style: none;
+    border-bottom-style: ridge;
+    border-color: royalblue;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.search {
+    cursor: pointer;
+    height: fit-content;
+}
+
+th {
+    
+    text-align: center;
+    background-color: rgba(185, 233, 227, 0.551);
+}
+
+tbody {
+    text-align: center;
+    
+}
+table {
+    padding: 10px;
+    margin: 20px;
+    border-right: 1px solid black;
+    width: 12rem;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}

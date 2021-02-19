@@ -1,0 +1,18 @@
+1. Declare a array 
+ [{Id:1,EmployeeName:"Rajesh",Age:22},{Id:2,EmployeeName:"Suman":Age:24},{Id:3,EmployeeName:"Bhuban",Age:28},{Id:4,EmployeeName:"Anamika":Age:32}
+  {Id:5,EmployeeName:"Shree",Age:29},{Id:6,EmployeeName:"Marco",Age:23},{Id:7,EmployeeName:"Ganesh",Age:25},{Id:8,EmployeeName:"Dhriti",Age:31}] 
+  and iterate through it to return a new array whose name contains a letter 'a' in it.
+  (Assign that array in a new array variable)
+
+2. Write a function to check if the provided value is palindrome .(traditional javascript methods, cannot use split,join and all)
+3. Write a function to return date in "2020-02-21" format.
+4. Create a switch case for ["Bitcoin","DogeCoin","Litecoin","Ethereum","Binance Coin"] array and return their 
+   respective price [$52,126,$0.0526,$232.06,$1,909.77,144.048] and name combined array. Example: [{Name:"Bitcoin",Price:"$52"}]
+
+5. Create a regex to test if a string has underscore in between (not in the start and end) and a digit at the end.
+6. Create  three different class (Class A, Class B, Class C), Class A has a field FirstName, Class B has a field LastName and
+   create a method in Class C to console.log() the concatenate value of firstName from Class A and LastName from Class B.(Use inheritance)
+7. Write a function to give me only the array whose name has both the character "a" and "e" and age is greater than 25.(Use array from question 1)
+8. Make function in question 7 async function (Value must be returned after certain delay).
+
+
