@@ -1,0 +1,30 @@
+.btn-primary {
+   background-color: #01010193;
+   
+}
+
+.btn-primary:hover {
+    background-color: #1a1a1a;
+}
+
+.button {
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.time-modal {
+    text-align: center;
+    margin-top: 10px;
+}
+
+span {
+    color: #009688;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
