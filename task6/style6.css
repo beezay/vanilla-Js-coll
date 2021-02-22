@@ -1,0 +1,50 @@
+.header {
+    text-align: center;
+}
+
+.input {
+    margin: auto 20px;
+    outline: none;
+    border-bottom: 1px inset #363636;
+    text-align: center;
+}
+
+.input:active {
+    outline: none;
+}
+
+.input-group {
+    max-width: 50%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.display-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.display-name p {
+    color: #1C2951;
+    font-size: 2rem;
+}
+
+#first-name {
+    max-width: 40%;
+}
+
+#last-name {
+    display: none;
+}
+
+#display-class {
+    display: none;
+}
+
+#btn-reset {
+    display: none;
+}

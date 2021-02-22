@@ -1,0 +1,42 @@
+h4 {
+    text-align: center;
+}
+
+.input-wrapper {
+    text-align: center;
+}
+
+input {
+    width: 40%;
+}
+
+.btn:hover {
+    color: red;
+    background-color: #fefefe;
+}
+
+.display {
+    margin: 20px auto;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    left: 50%;
+}
+
+td,
+th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100px;
+}
+
+th {
+    font-size: large;
+}
